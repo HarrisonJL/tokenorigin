@@ -1,0 +1,38 @@
+{
+ "date": "2026-10-19",
+ "deployer": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+ "tokenorigin": {
+  "address": "0xc2f09Eb3E89B3290184BBFDD28D51F8BC225F00A",
+  "deploy_tx": "0xc528dc786f318fffcd72464b4005ecd23e7cfa1c84a45110614a36919b33a506",
+  "sha256": "ee80b494bcd0004905f3c3384118690ad9e07b8f939b84a62b2c2a67bfd2c08c"
+ },
+ "gate": {
+  "address": "0x415593314252D41F49540E098ace63F8deDA6803",
+  "deploy_tx": "0x5330ac9ccf4781fd2880107cfb8778c12116dba1269bc0753b01914426e7b529",
+  "sha256": "c86f87204feaa5a6ea86fef743b8bc60fc81352f31a0efb8b0cf836c878ab04e",
+  "max_age_seconds": 86400,
+  "cap_raw": "1000000"
+ },
+ "strict": {
+  "address": "0x72e8C9a2A0c117Ec12857617fe69532f1365b0cd",
+  "deploy_tx": "0x0b9ff2112242d75c2b9f9b6254e112f342033b04d3990798e2e8fc3e5d036208",
+  "max_age_seconds": 1,
+  "cap_raw": "1000000"
+ },
+ "found_live": [
+  "**Circle's, Tether's and Paxos's own pages named the right token on every chain they were asked about.** USDC on Ethereum, Arbitrum and Base, USDT on Ethereum and PYUSD on Ethereum were each `CANONICAL`: the page writes the address by the chain's name, the chain's nodes agree it is a token with that symbol and those decimals, and the reader, with every voting validator agreeing, said the page presents it as current.",
+  "**The bridged copies that also say \"USDC\" are not Circle's.** On Arbitrum, USDC.e answers `symbol()` with USDC and `decimals()` with 6, exactly like the native token, and is `NOT_LISTED`: the page lists 0xaf88… for Arbitrum. On Base, the bridged USDbC is `NOT_LISTED` too, and so are DAI and Tether's EUR₮ (written on Tether's page beside Ethereum, but a different token).",
+  "**A look-alike and the non-tokens.** A made-up address built with the first and last four characters of USDC's is `LOOKALIKE` of USDC's listed address (marked SYNTHETIC in the proof; nothing lives there). The burn address, and USDC's Base address asked about on Ethereum, are `NOT_A_TOKEN`, and so is Paxos's supply controller: a contract the page writes beside PYUSD, which is not a token.",
+  "**A label that names no chain puts another chain's address in the listing.** Registered against Tether's \"USD₮ contract address\", the Ethereum listing held 0xdac1… and 0xd077…, the address the page gives for Kaia, where on Ethereum a different contract named \"Tether USD\" (symbol USDT, 6 decimals) lives. The reader saw only the Kaia wording around the address and recorded `NOT_ISSUER_ISSUED` with every voting validator agreeing; the lesson is to name the chain, as `tether-eth` does. The recorded reason (\"the issuer's page lists this address as not issued by the issuer\") is the contract's fixed wording for that verdict, and is looser than what happened here.",
+  "**The gate acts on the verdict.** PayoutGate approved 400,000 of Arbitrum's USDC and 250,000 of Base's, and refused: the bridged USDC.e (`NOT_LISTED`), the look-alike, a payout that would pass the 1,000,000 cap, a token never checked, a subject TokenOrigin has never heard of, and a check older than the strict gate's one second.",
+  "**Registration refuses what the page cannot support.** A label the page never shows, a symbol none of the listed addresses has, an Arbitrum subject registered against the Ethereum row, a duplicate, a chain without nodes, a page that is not https and decimals that do not match were each refused by the validators.",
+  "**The first deployment taught one thing and was replaced.** On it, 1 or 2 of 5 validators dissented on the check of Base's bridged USDbC in roughly four of ten repeated runs: dRPC and Tenderly answered the validators' burst of requests with HTTP 429, so a validator saw fewer than two answers for the address it read last. The verdict was right by majority every time, but a split vote is what a check should not show. The second deployment asks five nodes in order until two have answered; every transaction on it so far was unanimous. See [research/README.md](../research/README.md)."
+ ],
+ "superseded": [
+  {
+   "contract": "TokenOrigin (first deployment)",
+   "address": "0x5d123F8E00631B24E83859Ed4785138EC3A0DEa9",
+   "why": "Deployed earlier the same day (deploy tx 0xe02df85f…). It asked three nodes per chain (dRPC, publicnode, Tenderly) and required all three to answer; under the validators' simultaneous requests two of them returned HTTP 429, which split the vote on the last address read. The code differs in the node lists and the rule for using them (and in the wording of the reader's prompt and two redundant guards removed); its proof is kept in studio-next/live_proof_superseded_v1.json."
+  }
+ ]
+}

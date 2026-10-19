@@ -1,0 +1,168 @@
+anyone can approve a payout
+---
+_require(gl.message.sender_address == self.owner, "only the owner can approve payouts")
+---
+_require(True, "only the owner can approve payouts")
+===
+a zero payout is accepted
+---
+_require(amount_raw > 0, "amount must be positive")
+---
+_require(True, "amount must be positive")
+===
+a gate with no maximum age is accepted
+---
+_require(max_age_seconds > 0, "max_age_seconds must be positive")
+---
+_require(True, "max_age_seconds must be positive")
+===
+a gate with no cap is accepted
+---
+_require(cap_raw > 0, "cap_raw must be positive")
+---
+_require(True, "cap_raw must be positive")
+===
+an unknown subject is paid
+---
+_require(standing["exists"], f"{subject_id!r} refused: TokenOrigin has no such subject")
+---
+_require(True, f"{subject_id!r} refused: TokenOrigin has no such subject")
+===
+an unchecked token is paid
+---
+_require(standing["verdict"] != "NO_CHECK", f"{subject_id!r} refused: no decided check of {token} yet")
+---
+_require(True, f"{subject_id!r} refused: no decided check of {token} yet")
+===
+a stale check is accepted
+---
+age is not None and 0 <= age <= int(self.max_age_seconds)
+---
+True
+===
+a check dated in the future is accepted
+---
+age is not None and 0 <= age <= int(self.max_age_seconds)
+---
+age is not None and age <= int(self.max_age_seconds)
+===
+a check exactly at the maximum age is refused
+---
+age is not None and 0 <= age <= int(self.max_age_seconds)
+---
+age is not None and 0 <= age < int(self.max_age_seconds)
+===
+a check with no age is accepted
+---
+age is not None and 0 <= age <= int(self.max_age_seconds)
+---
+(age is None or 0 <= age <= int(self.max_age_seconds))
+===
+any verdict is accepted
+---
+_require(standing["verdict"] == "CANONICAL",
+---
+_require(True,
+===
+a token that is not listed is accepted
+---
+_require(standing["verdict"] == "CANONICAL",
+---
+_require(standing["verdict"] in ("CANONICAL", "NOT_LISTED"),
+===
+a deprecated token is accepted
+---
+_require(standing["verdict"] == "CANONICAL",
+---
+_require(standing["verdict"] in ("CANONICAL", "DEPRECATED"),
+===
+the cap is not enforced
+---
+total + int(amount_raw) <= int(self.cap_raw)
+---
+True
+===
+a total exactly at the cap is refused
+---
+total + int(amount_raw) <= int(self.cap_raw)
+---
+total + int(amount_raw) < int(self.cap_raw)
+===
+the cap ignores the running total
+---
+total + int(amount_raw) <= int(self.cap_raw)
+---
+int(amount_raw) <= int(self.cap_raw)
+===
+the running total is overwritten
+---
+self.totals[key] = u256(total + int(amount_raw))
+---
+self.totals[key] = u256(int(amount_raw))
+===
+the running total is not kept
+---
+self.totals[key] = u256(total + int(amount_raw))
+---
+pass
+===
+the total is shared between tokens
+---
+key = f"{subject_id}|{standing['token']}"
+---
+key = f"{subject_id}"
+===
+the total is keyed by the caller's spelling of the token
+---
+key = f"{subject_id}|{standing['token']}"
+---
+key = f"{subject_id}|{token}"
+===
+the approval does not record the chain
+---
+        record.chain = standing["chain"]
+---
+        record.chain = ""
+===
+the approval does not record the symbol
+---
+        record.symbol = standing["symbol"]
+---
+        record.symbol = ""
+===
+the approval does not record the issuer page
+---
+        record.docs_url = standing["docs_url"]
+---
+        record.docs_url = ""
+===
+the approval records the caller's spelling of the token
+---
+        record.token = standing["token"]
+---
+        record.token = token
+===
+the approval records no sender
+---
+        record.approved_by = gl.message.sender_address
+
+---
+
+===
+approval paging is not capped
+---
+limit = min(limit, MAX_PAGE_LIMIT)
+---
+pass
+===
+approval paging ignores the offset
+---
+i = len(self.approvals) - 1 - offset
+---
+i = len(self.approvals) - 1
+===
+the gate reads the wrong subject
+---
+view().get_standing(subject_id, token)
+---
+view().get_standing("circle-arb", token)

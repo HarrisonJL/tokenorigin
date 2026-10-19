@@ -1,0 +1,1674 @@
+[
+ {
+  "id": "reg-circle-eth",
+  "step": "register",
+  "args": [
+   "circle-eth",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "ethereum",
+   "USDC",
+   6,
+   "Circle USDC on Ethereum"
+  ],
+  "note": "Circle's USDC address page, the Ethereum row",
+  "tx": "0x7804827aa12a380aae8d96725673bda42176c7fcf80e8b9cf543633446a9c5cb",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "ethereum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "label": "Ethereum",
+   "note": "Circle USDC on Ethereum",
+   "registered_at": "2026-10-19T12:21:30.753119+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "circle-eth",
+   "symbol": "USDC"
+  }
+ },
+ {
+  "id": "reg-circle-arb",
+  "step": "register",
+  "args": [
+   "circle-arb",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Arbitrum",
+   "arbitrum",
+   "USDC",
+   6,
+   "Circle USDC on Arbitrum"
+  ],
+  "note": "the Arbitrum row, where the bridged USDC.e also says USDC",
+  "tx": "0xa7c12d6ed6315b90ba06501f39ab2c420e91ce03224c70ca8ea44b674b017676",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "arbitrum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "label": "Arbitrum",
+   "note": "Circle USDC on Arbitrum",
+   "registered_at": "2026-10-19T12:21:44.741884+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "circle-arb",
+   "symbol": "USDC"
+  }
+ },
+ {
+  "id": "reg-circle-base",
+  "step": "register",
+  "args": [
+   "circle-base",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Base",
+   "base",
+   "USDC",
+   6,
+   "Circle USDC on Base"
+  ],
+  "note": "the Base row, where the bridged copy is USDbC",
+  "tx": "0x20e7eba187b2fc8e4290afdee1fba77e782be79dfcbde0b5c873b502f9b8b780",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "base",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "label": "Base",
+   "note": "Circle USDC on Base",
+   "registered_at": "2026-10-19T12:22:09.243321+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "circle-base",
+   "symbol": "USDC"
+  }
+ },
+ {
+  "id": "reg-tether-eth",
+  "step": "register",
+  "args": [
+   "tether-eth",
+   "https://tether.to/en/supported-protocols/",
+   "Ethereum",
+   "ethereum",
+   "USDT",
+   6,
+   "Tether USDT on Ethereum"
+  ],
+  "note": "Tether's page, by 'Ethereum': EUR₮, USD₮ and CNH₮ are written together",
+  "tx": "0x099c59ba58907708fc510fae8de8f6049a5455c5a381a61385ac91c479d99de7",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "ethereum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://tether.to/en/supported-protocols/",
+   "label": "Ethereum",
+   "note": "Tether USDT on Ethereum",
+   "registered_at": "2026-10-19T12:22:23.639015+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "tether-eth",
+   "symbol": "USDT"
+  }
+ },
+ {
+  "id": "reg-tether-usdt0",
+  "step": "register",
+  "args": [
+   "tether-usdt0",
+   "https://tether.to/en/supported-protocols/",
+   "USD₮ contract address",
+   "ethereum",
+   "USDT",
+   6,
+   "Tether USD₮ and USD₮0 on Ethereum"
+  ],
+  "note": "Tether's page, by 'USD₮ contract address': two contracts with symbol USDT",
+  "tx": "0xd4ddf236e68fd537481fc0206e93d3af4c279c18841da067d8c65bd2b07fda70",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "ethereum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://tether.to/en/supported-protocols/",
+   "label": "USD₮ contract address",
+   "note": "Tether USD₮ and USD₮0 on Ethereum",
+   "registered_at": "2026-10-19T12:22:38.711189+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "tether-usdt0",
+   "symbol": "USDT"
+  }
+ },
+ {
+  "id": "reg-paxos-eth",
+  "step": "register",
+  "args": [
+   "paxos-eth",
+   "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+   "Ethereum Mainnet",
+   "ethereum",
+   "PYUSD",
+   6,
+   "Paxos PYUSD on Ethereum"
+  ],
+  "note": "Paxos's page, where a supply controller sits beside the token",
+  "tx": "0x6175aed8194253902fbae01924d569690c92dfbff398466f81b7367d5e13e329",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "ethereum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+   "label": "Ethereum Mainnet",
+   "note": "Paxos PYUSD on Ethereum",
+   "registered_at": "2026-10-19T12:22:53.400193+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "paxos-eth",
+   "symbol": "PYUSD"
+  }
+ },
+ {
+  "id": "reg-paxos-arb",
+  "step": "register",
+  "args": [
+   "paxos-arb",
+   "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+   "Arbitrum Mainnet",
+   "arbitrum",
+   "PYUSD",
+   6,
+   "registered, never checked"
+  ],
+  "note": "a subject with no check yet (for the gate)",
+  "tx": "0x8285d69662322e0db59b022ce63b0f1f15b63e1b5a91356a2500d576444444bd",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "arbitrum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+   "label": "Arbitrum Mainnet",
+   "note": "registered, never checked",
+   "registered_at": "2026-10-19T12:23:08.377794+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "paxos-arb",
+   "symbol": "PYUSD"
+  }
+ },
+ {
+  "id": "refuse-label",
+  "step": "refuse-register",
+  "args": [
+   "x-label",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Narnia",
+   "ethereum",
+   "USDC",
+   6,
+   ""
+  ],
+  "note": "a label the page never shows",
+  "tx": "0xae8b90a31137692d04c405ffa23c429d9516ecf604e5a69a4004c0adc3034131",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "subject refused: no_address_near_the_label"
+ },
+ {
+  "id": "refuse-symbol",
+  "step": "refuse-register",
+  "args": [
+   "x-symbol",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "ethereum",
+   "USDT",
+   6,
+   ""
+  ],
+  "note": "a symbol none of the page's Ethereum addresses has (USDT)",
+  "tx": "0xf1988fbe2c2146b6d760b0c6b982e46c4903e27dec7b9e305ed91c5c07cf6321",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "subject refused: no address the page lists near the label is a token with symbol USDT and 6 decimals on ethereum"
+ },
+ {
+  "id": "refuse-duplicate-decimals",
+  "step": "refuse-register",
+  "args": [
+   "x-dec",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "ethereum",
+   "USDC",
+   18,
+   ""
+  ],
+  "note": "the same page, label, chain and symbol, asked with different decimals",
+  "tx": "0x9b109bf31694a5b0b2d58e179582fb860450caad249ae713b7a42b86d285d893",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "revert": "that page, label, chain and symbol are already registered as 'circle-eth'"
+ },
+ {
+  "id": "refuse-chain",
+  "step": "refuse-register",
+  "args": [
+   "x-chain",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "polygon",
+   "USDC",
+   6,
+   ""
+  ],
+  "note": "a chain TokenOrigin has no three nodes for",
+  "tx": "0x55bb6e94546f2c44d9e0fc363823a3be77d3789456aad8e1e5e2eb2cd3b8b8ea",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "revert": "chain must be one of arbitrum, base, ethereum"
+ },
+ {
+  "id": "refuse-wrong-chain",
+  "step": "refuse-register",
+  "args": [
+   "x-wrong",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "arbitrum",
+   "USDC",
+   6,
+   ""
+  ],
+  "note": "Circle's Ethereum row asked about as an Arbitrum subject: nothing lives there",
+  "tx": "0x565261fc9cc9a7c6c875212fa895a8bc0d5942451929dae39bbb0a7a921ef892",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "revert": "subject refused: no address the page lists near the label is a token with symbol USDC and 6 decimals on arbitrum"
+ },
+ {
+  "id": "refuse-duplicate",
+  "step": "refuse-register",
+  "args": [
+   "x-dup",
+   "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "ethereum",
+   "USDC",
+   6,
+   ""
+  ],
+  "note": "the same page, label, chain and symbol again",
+  "tx": "0x813a8688b6c4dc46d785a42f56ff91026710c56e489fa84ac5eecacef9db9744",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "that page, label, chain and symbol are already registered as 'circle-eth'"
+ },
+ {
+  "id": "refuse-http",
+  "step": "refuse-register",
+  "args": [
+   "x-http",
+   "http://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "Ethereum",
+   "ethereum",
+   "USDC",
+   6,
+   ""
+  ],
+  "note": "a page that is not https",
+  "tx": "0xf6760f0e30f249dae6783c526bd4961ca25c4be28d784377d94d4fc5b2ef0d07",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "revert": "docs_url must be an https URL on a named host, without a port or fragment"
+ },
+ {
+  "id": "refuse-decimals",
+  "step": "refuse-register",
+  "args": [
+   "x-dec2",
+   "https://tether.to/en/supported-protocols/",
+   "USD₮ contract address",
+   "ethereum",
+   "XAUt",
+   18,
+   ""
+  ],
+  "note": "a symbol the page's addresses do have (XAU₮, Tether's gold token) with the wrong decimals (it has 6)",
+  "tx": "0xda103a4bf53cdd47f007fc6710c455536086f0c757a60beda5b13acc44c3298e",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "revert": "subject refused: no address the page lists near the label is a token with symbol XAUt and 18 decimals on ethereum"
+ },
+ {
+  "id": "check-canon-circle-eth",
+  "step": "check",
+  "args": [
+   "circle-eth",
+   "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+  ],
+  "note": "Circle's USDC on Ethereum",
+  "tx": "0x939077160b33847d03ed08084e45cf33d933cd796247dfe6d73fd045463ed997",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "check_id": 0,
+   "checked_at": "2026-10-19T12:25:12.797440+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238",
+     "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b",
+     "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f",
+     "0xeb33dc5fac03833e132593659e1de7256ab59794"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "circle-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-canon-circle-arb",
+  "step": "check",
+  "args": [
+   "circle-arb",
+   "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  ],
+  "note": "Circle's USDC on Arbitrum",
+  "tx": "0xb9c3818df6f3227a7b4c3da5628553024eadc9931ad287b26f2df8147ff607e0",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+   "check_id": 1,
+   "checked_at": "2026-10-19T12:25:34.832763+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x3600000000000000000000000000000000000000": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x5425890298aed601595a70ab815c96711a31bc65": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x3600000000000000000000000000000000000000",
+     "0x5425890298aed601595a70ab815c96711a31bc65",
+     "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "circle-arb",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-canon-circle-base",
+  "step": "check",
+  "args": [
+   "circle-base",
+   "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  ],
+  "note": "Circle's USDC on Base",
+  "tx": "0x7e499e96d521ace22f96aba8a460e706cbef52bdadbc5da7d74f6753e08747a5",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "candidate": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+   "check_id": 2,
+   "checked_at": "2026-10-19T12:25:58.072410+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x01c5c0122039549ad1493b8220cabedd739bc44e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x036cbd53842c5426634e7929541ec2318f3dcf7e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x5425890298aed601595a70ab815c96711a31bc65": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xd996633a415985dbd7d6d12f4a4343e31f5037cf": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x01c5c0122039549ad1493b8220cabedd739bc44e",
+     "0x036cbd53842c5426634e7929541ec2318f3dcf7e",
+     "0x5425890298aed601595a70ab815c96711a31bc65",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+     "0xd996633a415985dbd7d6d12f4a4343e31f5037cf"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "circle-base",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-canon-tether",
+  "step": "check",
+  "args": [
+   "tether-eth",
+   "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+  ],
+  "note": "Tether's USDT on Ethereum",
+  "tx": "0xea03ea79eb0ed7af35e56da812f8e88980a9ef33464fa43acc9933dd3aff3cce",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "check_id": 3,
+   "checked_at": "2026-10-19T12:26:20.303573+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef": [
+       "TOKEN",
+       "CNHT",
+       6
+      ],
+      "0xc581b735a1688071a1746c968e0798d642ede491": [
+       "TOKEN",
+       "EURT",
+       6
+      ],
+      "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+       "TOKEN",
+       "USDT",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef",
+     "0xc581b735a1688071a1746c968e0798d642ede491",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "tether-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDT",
+    "listing": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-canon-tether0",
+  "step": "check",
+  "args": [
+   "tether-usdt0",
+   "0xd077A400968890Eacc75cdc901F0356c943e4fDb"
+  ],
+  "note": "Tether's USD₮0, the second USDT contract the page lists",
+  "tx": "0x9981ecda9cc11c469cd995126e79532a41a5d4087402da6d1dfbfd5bfffa8950",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+   "check_id": 4,
+   "checked_at": "2026-10-19T12:26:47.942543+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x68749665ff8d2d112fa859aa293f07a622782f38": [
+       "TOKEN",
+       "XAUt",
+       6
+      ],
+      "0x919c1c267bc06a7039e03fcc2ef738525769109c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7": [
+       "TOKEN",
+       "MXNt",
+       6
+      ],
+      "0xd077a400968890eacc75cdc901f0356c943e4fdb": [
+       "TOKEN",
+       "USDT",
+       6
+      ],
+      "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+       "TOKEN",
+       "USDT",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e",
+     "0x68749665ff8d2d112fa859aa293f07a622782f38",
+     "0x919c1c267bc06a7039e03fcc2ef738525769109c",
+     "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+     "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "NOT_ISSUER_ISSUED"
+   },
+   "reasons": [
+    "the issuer's page lists this address as not issued by the issuer"
+   ],
+   "subject_id": "tether-usdt0",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDT",
+    "listing": [
+     "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": "NOT_ISSUER_ISSUED"
+   },
+   "verdict": "NOT_ISSUER_ISSUED"
+  }
+ },
+ {
+  "id": "check-canon-paxos",
+  "step": "check",
+  "args": [
+   "paxos-eth",
+   "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
+  ],
+  "note": "Paxos's PYUSD on Ethereum",
+  "tx": "0x7944e2bda6f10dab64ecdd2482767d3336422513ce2ab9c1d8e890a84d37d028",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "candidate": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+   "check_id": 5,
+   "checked_at": "2026-10-19T12:27:57.002900+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x19ed5c631edd34ac776368c377a855c42bc1876a": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": [
+       "CONTRACT",
+       "",
+       0
+      ],
+      "0x46850ad61c2b7d64d08c9c754f45254596696984": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x6c3ea9036406852006290770bedfcaba0e23a0e8": [
+       "TOKEN",
+       "PYUSD",
+       6
+      ],
+      "0x6f607843520585a9aced70e262a36f49b398a8c8": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x99af3eea856556646c98c8b9b2548fe815240750": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x19ed5c631edd34ac776368c377a855c42bc1876a",
+     "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3",
+     "0x46850ad61c2b7d64d08c9c754f45254596696984",
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+     "0x6f607843520585a9aced70e262a36f49b398a8c8",
+     "0x99af3eea856556646c98c8b9b2548fe815240750"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "paxos-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "PYUSD",
+    "listing": [
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-usdce-arb",
+  "step": "check",
+  "args": [
+   "circle-arb",
+   "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+  ],
+  "note": "Arbitrum's bridged USDC.e: its symbol() also says USDC, and Circle's page does not list it",
+  "tx": "0x2fa101d6fce8350bcb4a11071afcffd271d927d9e0eab634bd4c90ec2517c4e2",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+   "check_id": 6,
+   "checked_at": "2026-10-19T12:28:14.121461+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x3600000000000000000000000000000000000000": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x5425890298aed601595a70ab815c96711a31bc65": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+       "TOKEN",
+       "USDC",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x3600000000000000000000000000000000000000",
+     "0x5425890298aed601595a70ab815c96711a31bc65",
+     "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 1,
+   "reading": null,
+   "reasons": [
+    "the issuer's page lists other addresses for USDC on this chain, not this one"
+   ],
+   "subject_id": "circle-arb",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_LISTED"
+  }
+ },
+ {
+  "id": "check-usdbc-base",
+  "step": "check",
+  "args": [
+   "circle-base",
+   "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA"
+  ],
+  "note": "Base's bridged USDbC",
+  "tx": "0x9d5bcd1f78e34b30864ca87178515f5d49619738b158c814b3b8930c87b60d5b",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "DISAGREE",
+   "DISAGREE"
+  ],
+  "check": {
+   "candidate": "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+   "check_id": 7,
+   "checked_at": "2026-10-19T12:28:35.994371+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x01c5c0122039549ad1493b8220cabedd739bc44e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x036cbd53842c5426634e7929541ec2318f3dcf7e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x5425890298aed601595a70ab815c96711a31bc65": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xd996633a415985dbd7d6d12f4a4343e31f5037cf": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca": [
+       "TOKEN",
+       "USDbC",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x01c5c0122039549ad1493b8220cabedd739bc44e",
+     "0x036cbd53842c5426634e7929541ec2318f3dcf7e",
+     "0x5425890298aed601595a70ab815c96711a31bc65",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+     "0xd996633a415985dbd7d6d12f4a4343e31f5037cf"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 2,
+   "reading": null,
+   "reasons": [
+    "the issuer's page lists other addresses for USDC on this chain, not this one"
+   ],
+   "subject_id": "circle-base",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDbC",
+    "listing": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_LISTED"
+  }
+ },
+ {
+  "id": "check-dai-eth",
+  "step": "check",
+  "args": [
+   "circle-eth",
+   "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+  ],
+  "note": "DAI, a real token the page does not list",
+  "tx": "0x2710b9efce9d5e43adf13ab2f6b451ac46d2a6ae56faaa84947ff1dc62a86c9d",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "check_id": 8,
+   "checked_at": "2026-10-19T12:28:53.267070+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x6b175474e89094c44da98b954eedeac495271d0f": [
+       "TOKEN",
+       "DAI",
+       18
+      ],
+      "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238",
+     "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b",
+     "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f",
+     "0xeb33dc5fac03833e132593659e1de7256ab59794"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 0,
+   "reading": null,
+   "reasons": [
+    "the issuer's page lists other addresses for USDC on this chain, not this one"
+   ],
+   "subject_id": "circle-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 18,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "DAI",
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_LISTED"
+  }
+ },
+ {
+  "id": "check-eurt-eth",
+  "step": "check",
+  "args": [
+   "tether-eth",
+   "0xC581b735A1688071A1746c968e0798D642EDE491"
+  ],
+  "note": "EUR₮, written on Tether's page beside Ethereum but not a USDT",
+  "tx": "0xef7c1dc9de498c54aa0238967fdee1da0c0cdd0e240f658fa39f04b6d05df3dc",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xc581b735a1688071a1746c968e0798d642ede491",
+   "check_id": 9,
+   "checked_at": "2026-10-19T12:29:09.890807+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef": [
+       "TOKEN",
+       "CNHT",
+       6
+      ],
+      "0xc581b735a1688071a1746c968e0798d642ede491": [
+       "TOKEN",
+       "EURT",
+       6
+      ],
+      "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+       "TOKEN",
+       "USDT",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef",
+     "0xc581b735a1688071a1746c968e0798d642ede491",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 3,
+   "reading": null,
+   "reasons": [
+    "the issuer's page lists other addresses for USDT on this chain, not this one"
+   ],
+   "subject_id": "tether-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "EURT",
+    "listing": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_LISTED"
+  }
+ },
+ {
+  "id": "check-burn-eth",
+  "step": "check",
+  "args": [
+   "circle-eth",
+   "0x000000000000000000000000000000000000dEaD"
+  ],
+  "note": "an address with no code at all",
+  "tx": "0x91e5f2f440ab6bde2b0e978791bd4ac099462e9e185de6f1e5ab4a2289346b02",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0x000000000000000000000000000000000000dead",
+   "check_id": 10,
+   "checked_at": "2026-10-19T12:29:26.574412+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x000000000000000000000000000000000000dead": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238",
+     "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b",
+     "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f",
+     "0xeb33dc5fac03833e132593659e1de7256ab59794"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 8,
+   "reading": null,
+   "reasons": [
+    "no token contract answers at this address on this chain"
+   ],
+   "subject_id": "circle-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": null,
+    "candidate_kind": "EOA",
+    "candidate_symbol": null,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_A_TOKEN"
+  }
+ },
+ {
+  "id": "check-base-on-eth",
+  "step": "check",
+  "args": [
+   "circle-eth",
+   "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  ],
+  "note": "USDC's address on Base, asked about on Ethereum, where nothing lives at it",
+  "tx": "0x777b066cbfaf88a631315f919bc3efc0cc614c4bf17c410f0d77d7186838018a",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+   "check_id": 11,
+   "checked_at": "2026-10-19T12:29:43.896412+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238",
+     "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b",
+     "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f",
+     "0xeb33dc5fac03833e132593659e1de7256ab59794"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 10,
+   "reading": null,
+   "reasons": [
+    "no token contract answers at this address on this chain"
+   ],
+   "subject_id": "circle-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": null,
+    "candidate_kind": "EOA",
+    "candidate_symbol": null,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_A_TOKEN"
+  }
+ },
+ {
+  "id": "check-controller",
+  "step": "check",
+  "args": [
+   "paxos-eth",
+   "0x31d9bDEa6F104606C954f8FE6ba614F1BD347Ec3"
+  ],
+  "note": "Paxos's supply controller: a contract, not a token",
+  "tx": "0x5a9997d2693e0702b943333b9122132c0c441e27c56a75e92d6ed0cbb7f2906c",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "candidate": "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3",
+   "check_id": 12,
+   "checked_at": "2026-10-19T12:30:00.667035+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x19ed5c631edd34ac776368c377a855c42bc1876a": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": [
+       "CONTRACT",
+       "",
+       0
+      ],
+      "0x46850ad61c2b7d64d08c9c754f45254596696984": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x6c3ea9036406852006290770bedfcaba0e23a0e8": [
+       "TOKEN",
+       "PYUSD",
+       6
+      ],
+      "0x6f607843520585a9aced70e262a36f49b398a8c8": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x99af3eea856556646c98c8b9b2548fe815240750": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x19ed5c631edd34ac776368c377a855c42bc1876a",
+     "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3",
+     "0x46850ad61c2b7d64d08c9c754f45254596696984",
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+     "0x6f607843520585a9aced70e262a36f49b398a8c8",
+     "0x99af3eea856556646c98c8b9b2548fe815240750"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 5,
+   "reading": null,
+   "reasons": [
+    "no token contract answers at this address on this chain"
+   ],
+   "subject_id": "paxos-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": null,
+    "candidate_kind": "CONTRACT",
+    "candidate_symbol": null,
+    "listing": [
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "lookalike_of": null,
+    "status": null
+   },
+   "verdict": "NOT_A_TOKEN"
+  }
+ },
+ {
+  "id": "check-lookalike",
+  "step": "check",
+  "args": [
+   "circle-eth",
+   "0xa0b8dedededededededededededededeadadeb48"
+  ],
+  "note": "SYNTHETIC: a made-up address built to look like USDC's",
+  "tx": "0x75029ccbd539ffbc1b41444377f773ff533e17621c968b3754da07f6c127999b",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "candidate": "0xa0b8dedededededededededededededeadadeb48",
+   "check_id": 13,
+   "checked_at": "2026-10-19T12:30:17.898145+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+       "EOA",
+       "",
+       0
+      ],
+      "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xa0b8dedededededededededededededeadadeb48": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+       "EOA",
+       "",
+       0
+      ],
+      "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+       "EOA",
+       "",
+       0
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238",
+     "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b",
+     "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f",
+     "0xeb33dc5fac03833e132593659e1de7256ab59794"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 11,
+   "reading": null,
+   "reasons": [
+    "this address shares its first 4 and last 4 characters with the listed 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 but is a different address"
+   ],
+   "subject_id": "circle-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": null,
+    "candidate_kind": "EOA",
+    "candidate_symbol": null,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "status": null
+   },
+   "verdict": "LOOKALIKE"
+  }
+ }
+]

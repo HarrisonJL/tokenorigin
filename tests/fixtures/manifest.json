@@ -1,0 +1,25 @@
+{
+ "pages": {
+  "circle.html": {
+   "url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+   "status": 200,
+   "bytes": 385122,
+   "sha256": "fcda4b61ba662b4195222082d14bd8697122e47f24d1ff91a0b4c43cf34e11d2",
+   "captured": "2026-10-18T17:40Z"
+  },
+  "tether.html": {
+   "url": "https://tether.to/en/supported-protocols/",
+   "status": 200,
+   "bytes": 77018,
+   "sha256": "468cda12c268315de75875fe68acd814108a8b15472ae2e789d5a9e5b8be83b4",
+   "captured": "2026-10-18T17:40Z"
+  },
+  "paxos.html": {
+   "url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+   "status": 200,
+   "bytes": 270447,
+   "sha256": "4b0b94d641588610ac563479c3d89b95da10917fd067ee87ff0daaca90e9eaa7",
+   "captured": "2026-10-18T17:40Z"
+  }
+ }
+}

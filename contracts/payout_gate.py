@@ -1,0 +1,110 @@
+# v0.1.0
+# { "Depends": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6" }
+
+# PayoutGate - a minimal consumer of TokenOrigin, proving a verdict can gate
+# a payment's token on-chain. A payout is only approved if, in TokenOrigin's
+# own standing for the token under a subject:
+#   - the latest decided check of THIS token is no older than the gate's max
+#     age,
+#   - the verdict is CANONICAL (the issuer's own page lists it as theirs,
+#     current, and the chain agrees it is that token), and
+#   - the subject's running total stays within the gate's cap.
+# Approvals are recorded by the gate's owner. Anything else reverts.
+#
+# GenVM v0.2.11 conventions (locally tested source of truth);
+# contracts/payout_gate_studio_next.py is the deployed port.
+# Header must end in a blank line (real GenVM v0.2.11 requirement).
+
+from genlayer import *
+import datetime
+
+MAX_PAGE_LIMIT = 50
+
+
+def _require(condition: bool, message: str) -> None:
+    if not condition:
+        raise gl.vm.UserError(message)
+
+
+def _now() -> datetime.datetime:
+    return datetime.datetime.fromisoformat(gl.message_raw['datetime'])
+
+
+@allow_storage
+class Approval:
+    subject_id: str
+    token: str
+    chain: str       # what TokenOrigin said the subject is, so the log shows which issuer page and chain were relied on
+    symbol: str
+    docs_url: str
+    amount_raw: u256
+    approved_by: Address
+    approved_at: datetime.datetime
+
+
+class PayoutGate(gl.Contract):
+    owner: Address
+    tokenorigin_address: Address
+    max_age_seconds: u32
+    cap_raw: u256
+    approvals: DynArray[Approval]
+    totals: TreeMap[str, u256]
+
+    def __init__(self, tokenorigin_address: str, max_age_seconds: u32, cap_raw: u256) -> None:
+        _require(max_age_seconds > 0, "max_age_seconds must be positive")
+        _require(cap_raw > 0, "cap_raw must be positive")
+        self.owner = gl.message.sender_address
+        self.tokenorigin_address = Address(tokenorigin_address)
+        self.max_age_seconds = max_age_seconds
+        self.cap_raw = cap_raw
+
+    # Owner only: the gate demonstrates a consumer, it does not move funds.
+    @gl.public.write
+    def approve(self, subject_id: str, token: str, amount_raw: u256) -> None:
+        _require(gl.message.sender_address == self.owner, "only the owner can approve payouts")
+        _require(amount_raw > 0, "amount must be positive")
+        standing = gl.get_contract_at(self.tokenorigin_address).view().get_standing(subject_id, token)
+        _require(standing["exists"], f"{subject_id!r} refused: TokenOrigin has no such subject")
+        _require(standing["verdict"] != "NO_CHECK", f"{subject_id!r} refused: no decided check of {token} yet")
+        age = standing["age_seconds"]
+        _require(age is not None and 0 <= age <= int(self.max_age_seconds),
+                 f"{subject_id!r} refused: its latest decided check of {token} is {age} seconds old; this gate wants at most {self.max_age_seconds}")
+        _require(standing["verdict"] == "CANONICAL",
+                 f"{subject_id!r} refused: {token} is {standing['verdict']}, not CANONICAL")
+        key = f"{subject_id}|{standing['token']}"
+        total = int(self.totals.get(key, u256(0)))
+        _require(total + int(amount_raw) <= int(self.cap_raw),
+                 f"{subject_id!r} refused: this would take the total past the cap {self.cap_raw}")
+
+        record = self.approvals.append_new_get()
+        record.subject_id = subject_id
+        record.token = standing["token"]
+        record.chain = standing["chain"]
+        record.symbol = standing["symbol"]
+        record.docs_url = standing["docs_url"]
+        record.amount_raw = amount_raw
+        record.approved_by = gl.message.sender_address
+        record.approved_at = _now()
+        self.totals[key] = u256(total + int(amount_raw))
+
+    @gl.public.view
+    def get_total(self, subject_id: str, token: str) -> dict:
+        return {"subject_id": subject_id, "token": token.casefold(),
+                "approved_raw": str(self.totals.get(f"{subject_id}|{token.casefold()}", u256(0))), "cap_raw": str(self.cap_raw)}
+
+    @gl.public.view
+    def get_approvals(self, offset: u32, limit: u32) -> list:
+        limit = min(limit, MAX_PAGE_LIMIT)
+        out = []
+        i = len(self.approvals) - 1 - offset
+        while i >= 0 and len(out) < limit:
+            a = self.approvals[i]
+            out.append({"subject_id": a.subject_id, "token": a.token, "chain": a.chain, "symbol": a.symbol, "docs_url": a.docs_url,
+                        "amount_raw": str(a.amount_raw), "approved_by": a.approved_by.as_hex, "approved_at": a.approved_at.isoformat()})
+            i -= 1
+        return out
+
+    @gl.public.view
+    def get_config(self) -> dict:
+        return {"owner": self.owner.as_hex, "tokenorigin_address": self.tokenorigin_address.as_hex,
+                "max_age_seconds": self.max_age_seconds, "cap_raw": str(self.cap_raw), "approval_count": len(self.approvals)}

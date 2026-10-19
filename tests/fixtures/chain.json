@@ -1,0 +1,1354 @@
+{
+ "captured": "2026-10-19T13:03Z",
+ "chains": {
+  "arbitrum": {
+   "0x000000000000000000000000000000000000dead": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x01c5c0122039549ad1493b8220cabedd739bc44e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x033068f6539f8e6e6b131e6b2b814e6c34a5224b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x036cbd53842c5426634e7929541ec2318f3dcf7e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0512feac6339ff7889822cb5aa2a86c848e9d392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x078d782b760474a361dda0af3839290b0ef57ad6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0b2c639c533813f4aa9d7837caf62653d097ff85": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0ba304580ee7c9a980cf72e55f5ed2e9fd30bc51": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0c382e685bbeefe5d3d9c29e29e341fee8e84c5d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x176211869ca2b568f2a7d4ee941e073a821ee1ff": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x19ed5c631edd34ac776368c377a855c42bc1876a": [
+    "CONTRACT",
+    "",
+    0
+   ],
+   "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x1d17cbcf0d6d143135ae902365d2e5e2a16538d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x21caef8a43163eea865baee23b9c2e327696a3bf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x222365ef19f7947e5484218551b56bb3965aa7af": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x22474b19cee9131879619644e970a1127969c99e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x28f1f38a9f7db1f769a71af0a13e8bace2ab0e9f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x29219dd400f2bf60e5a23d13be72b486d4038894": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2b3370ee501b4a559b57d449569354196457d8ab": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d270e6886d130d724215a266106e6832161eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d661c89d812261039af9764eceaaee884f5f67f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d0220469e10c4e71834a79b1f276d740d3768f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x357b0b74bc833e95a115ad22604854d6b0fca151": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3600000000000000000000000000000000000000": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3d7f2c478aafdb65542bcb44bceec05849999d2d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x46850ad61c2b7d64d08c9c754f45254596696984": [
+    "TOKEN",
+    "PYUSD",
+    6
+   ],
+   "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fa5f914c132bef506bc3afb583186211a3c0ea2": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fcf1784b31630811181f670aea7a7bef803eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x534b2f3a21130d7a60830c2df862319e593943a3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5425890298aed601595a70ab815c96711a31bc65": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5fd84259d66cd46123540766be93dfe6d43130d7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x66145f38cbac35ca6f1dfb4914df98f1614aea88": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x68749665ff8d2d112fa859aa293f07a622782f38": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x69091fbab5f7d635ee7ac5098cf0c1efbe31d68f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6b175474e89094c44da98b954eedeac495271d0f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6c3ea9036406852006290770bedfcaba0e23a0e8": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6d7f141b6819c2c9cc2f818e6ad549e7ca090f8f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6f607843520585a9aced70e262a36f49b398a8c8": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x7433b41c6c5e1d58d4da99483609520255ab661b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x754704bc059f8c67012fed69bc8a327a5aafb603": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x79a02482a880bce3f13e09da970dc34db4cd24d1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x87b4a8176b3df6b71e26cc095edcaf4db07506b4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x919c1c267bc06a7039e03fcc2ef738525769109c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x99af3eea856556646c98c8b9b2548fe815240750": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa00c59ff5a080d2b954d0c75e46e22a0c371235a": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa1ec7fc00a6f40db9693ad1415d0c193ad390649": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa4879fed32ecbef99399e5cbc247e533421c4ec6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xae045de5638162fa134807cb558e15a3f5a7f853": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+    "TOKEN",
+    "USDC",
+    6
+   ],
+   "0xb5ab69f7bbada22b28e79c8ffaece55ef1c771d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb6ceceab302e2e4948951ee7843fc24e92933061": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xbae207659db88bea0cbead6da0ed00aac12edcdd": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc581b735a1688071a1746c968e0798d642ede491": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc879c018db60520f4355c26ed1a6d572cdac1815": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcb5f30e335672893c7eb944b374c196392c19d18": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xceba9300f2b948710d2653dd7b07f33a8b32118c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfb1186f4e93d60e60a8bdd997427d1f33bc372b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfc8330f4bcab529c625d12781b1c19466a9fc8b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd077a400968890eacc75cdc901f0356c943e4fdb": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd8da6bf26964af9d7eed9e03e53415d37aa96045": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd996633a415985dbd7d6d12f4a4343e31f5037cf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdba34672e30cb065b1f93e3ab55318768fd6fef6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdec90b78111ba2fc6fc6d84d8b9ec159a2d4b9b3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe67fb267022cba8064dd388cc2fed724f3120d9d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xed03ed872159e199065401b6d0d487d78d9464aa": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xf73e887a8754f540ee6e1a93bdc6dde2af69fc7c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfabab97dce620294d2b0b0e46c68964e326300ac": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfece4462d57bd51a6a552365a011b95f0e16d9b7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+    "TOKEN",
+    "USDC",
+    6
+   ]
+  },
+  "base": {
+   "0x000000000000000000000000000000000000dead": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x01c5c0122039549ad1493b8220cabedd739bc44e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x033068f6539f8e6e6b131e6b2b814e6c34a5224b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x036cbd53842c5426634e7929541ec2318f3dcf7e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0512feac6339ff7889822cb5aa2a86c848e9d392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x078d782b760474a361dda0af3839290b0ef57ad6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0b2c639c533813f4aa9d7837caf62653d097ff85": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0ba304580ee7c9a980cf72e55f5ed2e9fd30bc51": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0c382e685bbeefe5d3d9c29e29e341fee8e84c5d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x176211869ca2b568f2a7d4ee941e073a821ee1ff": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x19ed5c631edd34ac776368c377a855c42bc1876a": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x1d17cbcf0d6d143135ae902365d2e5e2a16538d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x21caef8a43163eea865baee23b9c2e327696a3bf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x222365ef19f7947e5484218551b56bb3965aa7af": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x22474b19cee9131879619644e970a1127969c99e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x28f1f38a9f7db1f769a71af0a13e8bace2ab0e9f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x29219dd400f2bf60e5a23d13be72b486d4038894": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2b3370ee501b4a559b57d449569354196457d8ab": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d270e6886d130d724215a266106e6832161eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d661c89d812261039af9764eceaaee884f5f67f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d0220469e10c4e71834a79b1f276d740d3768f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x357b0b74bc833e95a115ad22604854d6b0fca151": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3600000000000000000000000000000000000000": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3d7f2c478aafdb65542bcb44bceec05849999d2d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x46850ad61c2b7d64d08c9c754f45254596696984": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fa5f914c132bef506bc3afb583186211a3c0ea2": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fcf1784b31630811181f670aea7a7bef803eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x534b2f3a21130d7a60830c2df862319e593943a3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5425890298aed601595a70ab815c96711a31bc65": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5fd84259d66cd46123540766be93dfe6d43130d7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x66145f38cbac35ca6f1dfb4914df98f1614aea88": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x68749665ff8d2d112fa859aa293f07a622782f38": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x69091fbab5f7d635ee7ac5098cf0c1efbe31d68f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6b175474e89094c44da98b954eedeac495271d0f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6c3ea9036406852006290770bedfcaba0e23a0e8": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6d7f141b6819c2c9cc2f818e6ad549e7ca090f8f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6f607843520585a9aced70e262a36f49b398a8c8": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x7433b41c6c5e1d58d4da99483609520255ab661b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x754704bc059f8c67012fed69bc8a327a5aafb603": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x79a02482a880bce3f13e09da970dc34db4cd24d1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+    "TOKEN",
+    "USDC",
+    6
+   ],
+   "0x87b4a8176b3df6b71e26cc095edcaf4db07506b4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x919c1c267bc06a7039e03fcc2ef738525769109c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x99af3eea856556646c98c8b9b2548fe815240750": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa00c59ff5a080d2b954d0c75e46e22a0c371235a": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa1ec7fc00a6f40db9693ad1415d0c193ad390649": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa4879fed32ecbef99399e5cbc247e533421c4ec6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xae045de5638162fa134807cb558e15a3f5a7f853": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb5ab69f7bbada22b28e79c8ffaece55ef1c771d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb6ceceab302e2e4948951ee7843fc24e92933061": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xbae207659db88bea0cbead6da0ed00aac12edcdd": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc581b735a1688071a1746c968e0798d642ede491": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc879c018db60520f4355c26ed1a6d572cdac1815": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcb5f30e335672893c7eb944b374c196392c19d18": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xceba9300f2b948710d2653dd7b07f33a8b32118c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfb1186f4e93d60e60a8bdd997427d1f33bc372b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfc8330f4bcab529c625d12781b1c19466a9fc8b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd077a400968890eacc75cdc901f0356c943e4fdb": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd8da6bf26964af9d7eed9e03e53415d37aa96045": [
+    "CONTRACT",
+    "",
+    0
+   ],
+   "0xd996633a415985dbd7d6d12f4a4343e31f5037cf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca": [
+    "TOKEN",
+    "USDbC",
+    6
+   ],
+   "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdba34672e30cb065b1f93e3ab55318768fd6fef6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdec90b78111ba2fc6fc6d84d8b9ec159a2d4b9b3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe67fb267022cba8064dd388cc2fed724f3120d9d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xed03ed872159e199065401b6d0d487d78d9464aa": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xf73e887a8754f540ee6e1a93bdc6dde2af69fc7c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfabab97dce620294d2b0b0e46c68964e326300ac": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfece4462d57bd51a6a552365a011b95f0e16d9b7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+    "EOA",
+    "",
+    0
+   ]
+  },
+  "ethereum": {
+   "0x000000000000000000000000000000000000dead": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x01c5c0122039549ad1493b8220cabedd739bc44e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x033068f6539f8e6e6b131e6b2b814e6c34a5224b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x036cbd53842c5426634e7929541ec2318f3dcf7e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0512feac6339ff7889822cb5aa2a86c848e9d392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x078d782b760474a361dda0af3839290b0ef57ad6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0b2c639c533813f4aa9d7837caf62653d097ff85": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0ba304580ee7c9a980cf72e55f5ed2e9fd30bc51": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x0c382e685bbeefe5d3d9c29e29e341fee8e84c5d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x176211869ca2b568f2a7d4ee941e073a821ee1ff": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x19ed5c631edd34ac776368c377a855c42bc1876a": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x1c7d4b196cb0c7b01d743fbc6116a902379c7238": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x1d17cbcf0d6d143135ae902365d2e5e2a16538d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x21caef8a43163eea865baee23b9c2e327696a3bf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x222365ef19f7947e5484218551b56bb3965aa7af": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x22474b19cee9131879619644e970a1127969c99e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x28f1f38a9f7db1f769a71af0a13e8bace2ab0e9f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x29219dd400f2bf60e5a23d13be72b486d4038894": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2b3370ee501b4a559b57d449569354196457d8ab": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d270e6886d130d724215a266106e6832161eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d661c89d812261039af9764eceaaee884f5f67f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x2d9f7cad728051aa35ecdc472a14cf8cdf5cfd6b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d0220469e10c4e71834a79b1f276d740d3768f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": [
+    "CONTRACT",
+    "",
+    0
+   ],
+   "0x357b0b74bc833e95a115ad22604854d6b0fca151": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3600000000000000000000000000000000000000": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x3d7f2c478aafdb65542bcb44bceec05849999d2d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x46850ad61c2b7d64d08c9c754f45254596696984": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fa5f914c132bef506bc3afb583186211a3c0ea2": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x4fcf1784b31630811181f670aea7a7bef803eaed": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x534b2f3a21130d7a60830c2df862319e593943a3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5425890298aed601595a70ab815c96711a31bc65": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x5fd84259d66cd46123540766be93dfe6d43130d7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x66145f38cbac35ca6f1dfb4914df98f1614aea88": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x68749665ff8d2d112fa859aa293f07a622782f38": [
+    "TOKEN",
+    "XAUt",
+    6
+   ],
+   "0x69091fbab5f7d635ee7ac5098cf0c1efbe31d68f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6b175474e89094c44da98b954eedeac495271d0f": [
+    "TOKEN",
+    "DAI",
+    18
+   ],
+   "0x6c3ea9036406852006290770bedfcaba0e23a0e8": [
+    "TOKEN",
+    "PYUSD",
+    6
+   ],
+   "0x6d7f141b6819c2c9cc2f818e6ad549e7ca090f8f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef": [
+    "TOKEN",
+    "CNHT",
+    6
+   ],
+   "0x6f607843520585a9aced70e262a36f49b398a8c8": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x7433b41c6c5e1d58d4da99483609520255ab661b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x754704bc059f8c67012fed69bc8a327a5aafb603": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x75faf114eafb1bdbe2f0316df893fd58ce46aa4d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x79a02482a880bce3f13e09da970dc34db4cd24d1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x87b4a8176b3df6b71e26cc095edcaf4db07506b4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x919c1c267bc06a7039e03fcc2ef738525769109c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7": [
+    "TOKEN",
+    "MXNt",
+    6
+   ],
+   "0x98d2919b9a214e6fa5384ac81e6864ba686ad74c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0x99af3eea856556646c98c8b9b2548fe815240750": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa00c59ff5a080d2b954d0c75e46e22a0c371235a": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": [
+    "TOKEN",
+    "USDC",
+    6
+   ],
+   "0xa1ec7fc00a6f40db9693ad1415d0c193ad390649": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xa4879fed32ecbef99399e5cbc247e533421c4ec6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xae045de5638162fa134807cb558e15a3f5a7f853": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb5ab69f7bbada22b28e79c8ffaece55ef1c771d4": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb6ceceab302e2e4948951ee7843fc24e92933061": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb88339cb7199b77e23db6e890353e22632ba630f": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xbae207659db88bea0cbead6da0ed00aac12edcdd": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": [
+    "TOKEN",
+    "WETH",
+    18
+   ],
+   "0xc581b735a1688071a1746c968e0798d642ede491": [
+    "TOKEN",
+    "EURT",
+    6
+   ],
+   "0xc879c018db60520f4355c26ed1a6d572cdac1815": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcb5f30e335672893c7eb944b374c196392c19d18": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xceba9300f2b948710d2653dd7b07f33a8b32118c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfb1186f4e93d60e60a8bdd997427d1f33bc372b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xcfc8330f4bcab529c625d12781b1c19466a9fc8b": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd077a400968890eacc75cdc901f0356c943e4fdb": [
+    "TOKEN",
+    "USDT",
+    6
+   ],
+   "0xd8da6bf26964af9d7eed9e03e53415d37aa96045": [
+    "CONTRACT",
+    "",
+    0
+   ],
+   "0xd996633a415985dbd7d6d12f4a4343e31f5037cf": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdac17f958d2ee523a2206206994597c13d831ec7": [
+    "TOKEN",
+    "USDT",
+    6
+   ],
+   "0xdba34672e30cb065b1f93e3ab55318768fd6fef6": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xdec90b78111ba2fc6fc6d84d8b9ec159a2d4b9b3": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xe67fb267022cba8064dd388cc2fed724f3120d9d": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xeb33dc5fac03833e132593659e1de7256ab59794": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xed03ed872159e199065401b6d0d487d78d9464aa": [
+    "TOKEN",
+    "MXNt",
+    6
+   ],
+   "0xf73e887a8754f540ee6e1a93bdc6dde2af69fc7c": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfabab97dce620294d2b0b0e46c68964e326300ac": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xfece4462d57bd51a6a552365a011b95f0e16d9b7": [
+    "EOA",
+    "",
+    0
+   ],
+   "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+    "EOA",
+    "",
+    0
+   ]
+  }
+ },
+ "nodes": {
+  "arbitrum": [
+   "https://arbitrum-one-rpc.publicnode.com",
+   "https://arb1.arbitrum.io/rpc",
+   "https://arbitrum.drpc.org",
+   "https://arbitrum.gateway.tenderly.co",
+   "https://arbitrum-one.public.blastapi.io"
+  ],
+  "base": [
+   "https://base-rpc.publicnode.com",
+   "https://mainnet.base.org",
+   "https://base.drpc.org",
+   "https://base.gateway.tenderly.co",
+   "https://base-mainnet.public.blastapi.io"
+  ],
+  "ethereum": [
+   "https://ethereum-rpc.publicnode.com",
+   "https://eth-mainnet.public.blastapi.io",
+   "https://eth.drpc.org",
+   "https://gateway.tenderly.co/public/mainnet",
+   "https://eth-pokt.nodies.app"
+  ]
+ }
+}
