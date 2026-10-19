@@ -20,7 +20,7 @@ Both contracts passed the live runner's `getContractSchemaForCode` check before 
 
 ## Live proof (2026-10-19)
 
-Reproduce with `cd studio-next && npx tsx prove.ts <tokenorigin> <register|check|demo|gate|read> [payoutgate] [strict gate]`. Every row is from [`studio-next/live_proof.json`](studio-next/live_proof.json), written as it ran (it resumes where it stopped). "Agree" counts the validators that actively voted (Studio Next leaves the rest of the 5-seat committee idle). **All 37 transactions reached consensus, 37 of them with every voting validator agreeing and 0 with a dissenting vote (shown as "disagree" in the tables)**, including the ones the contracts refused: a refusal is a decided outcome.
+Reproduce with `cd studio-next && npx tsx prove.ts <tokenorigin> <register|check|demo|gate|read> [payoutgate] [strict gate]`. Every row is from [`studio-next/live_proof.json`](studio-next/live_proof.json), written as it ran (it resumes where it stopped). "Agree" counts the validators that actively voted (Studio Next leaves the rest of the 5-seat committee idle). **All 44 transactions reached consensus, 44 of them with every voting validator agreeing and 0 with a dissenting vote (shown as "disagree" in the tables)**, including the ones the contracts refused: a refusal is a decided outcome.
 
 ### 1. Subjects registered
 
@@ -72,6 +72,16 @@ One `verify` is one consensus transaction about one candidate address: every val
 
 The full address, the listing, the model's reading and the agreed on-chain facts of every row are in the check's record: `get_check(id)`.
 
+### 4. Two SYNTHETIC pages, for the verdicts no real page earned
+
+None of the three real issuers' pages marks an address deprecated or not issued by them (the one real `NOT_ISSUER_ISSUED` above is Tether's Kaia address read under a label that names no chain, not a page calling a token bridged; Circle's page does say in prose that some chains' bridged tokens are not Circle-issued, but writes no address for them). To show `DEPRECATED` and `NOT_ISSUER_ISSUED` on-chain, two pages were written for this purpose ([`demo/`](demo/), served from `raw.githubusercontent.com`): they present a fictitious "Example Issuer" and name REAL token contracts. **They are not real issuers' pages and no issuer wrote them.**
+
+| Subject | Candidate | The page presents it as | Verdict | Tx |
+|---|---|---|---|---|
+| `demo-arb` | `0xaf88d0…5831` (the native token) | CURRENT | **CANONICAL** | [`0xbe9871be…`](https://explorer-studio-dev.genlayer.com/tx/0xbe9871beeeb7ec7f5a00d5f9ed7f13ab4e8501c3bf795375a50f8fc043a50bc9) 3 agree |
+| `demo-arb` | `0xff970a…5cc8` (the same page says this one is bridged and not issued by the issuer) | NOT_ISSUER_ISSUED | **NOT_ISSUER_ISSUED** | [`0x7c4f7638…`](https://explorer-studio-dev.genlayer.com/tx/0x7c4f7638550606a92126bfe5e8a82c6a1b71140b22b56337f29de4524ae7b414) 3 agree |
+| `demo-eth` | `0x6b1754…1d0f` (calls its Ethereum token deprecated) | DEPRECATED | **DEPRECATED** | [`0xda9637cb…`](https://explorer-studio-dev.genlayer.com/tx/0xda9637cb9f56c904f581f5b024633dfecbad96827cb77d7a9e78dfb8652156d2) 3 agree |
+
 ### 5. PayoutGate: a consumer that acts on the verdict
 
 The gate records a payout approval for a token under a subject only if TokenOrigin's standing for that token is fresh and `CANONICAL`, and the running total stays within the cap. It reads `get_standing` at the moment of the call, from TokenOrigin's own record.
@@ -86,6 +96,10 @@ The gate records a payout approval for a token under a subject only if TokenOrig
 | registered, never checked: refused | gate | `approve(paxos-arb, 0x46850a…6984, 1)` | refused: `'paxos-arb' refused: no decided check of 0x46850aD61C2B7d64d08c9C754F45254596696984 yet` | [`0xf8f2b403…`](https://explorer-studio-dev.genlayer.com/tx/0xf8f2b40346669d688920683c1676f6dba02a05dc32ba0411626f4b8289847fd3) 3 agree |
 | a subject TokenOrigin has never heard of: refused | gate | `approve(ghost, 0xA0b869…eB48, 1)` | refused: `'ghost' refused: TokenOrigin has no such subject` | [`0x75b42875…`](https://explorer-studio-dev.genlayer.com/tx/0x75b4287514ef814aea8ee7845654b9844697ad5093916d74d34ac528a6d3d28b) 3 agree |
 | a gate that wants a check no more than a second old: refused | strict | `approve(circle-arb, 0xaf88d0…5831, 1)` | refused: `'circle-arb' refused: its latest decided check of 0xaf88d065e77c8cC2239327C5EDb3A432268e5831 is 317 seconds old; this gate wants at most 1` | [`0x6ad75452…`](https://explorer-studio-dev.genlayer.com/tx/0x6ad75452dc7e756cdee661452b5b488faac5849f88932cc65d31f911654586b8) 3 agree |
+| DEPRECATED: refused | gate | `approve(demo-eth, 0x6B1754…1d0F, 1)` | refused: `'demo-eth' refused: 0x6B175474E89094C44Da98b954EedeAC495271d0F is DEPRECATED, not CANONICAL` | [`0x825bd662…`](https://explorer-studio-dev.genlayer.com/tx/0x825bd662115eaeaa69633b8243d789878a7a14c39ee117174464788db0299729) 3 agree |
+| NOT_ISSUER_ISSUED: refused | gate | `approve(demo-arb, 0xFF970A…5CC8, 1)` | refused: `'demo-arb' refused: 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8 is NOT_ISSUER_ISSUED, not CANONICAL` | [`0xdb7db9ae…`](https://explorer-studio-dev.genlayer.com/tx/0xdb7db9ae728b79bbc715928e462e06b938a966843e094e6eaf5000c1a3e6e8fa) 3 agree |
+
+After the run the gate's `get_config()` reports 2 approval(s); each is logged with the token, chain, symbol and the issuer's page it relied on (`get_approvals`).
 
 ## What the live run found
 
@@ -94,8 +108,9 @@ The gate records a payout approval for a token under a subject only if TokenOrig
 - **A look-alike and the non-tokens.** A made-up address built with the first and last four characters of USDC's is `LOOKALIKE` of USDC's listed address (marked SYNTHETIC in the proof; nothing lives there). The burn address, and USDC's Base address asked about on Ethereum, are `NOT_A_TOKEN`, and so is Paxos's supply controller: a contract the page writes beside PYUSD, which is not a token.
 - **A label that names no chain puts another chain's address in the listing.** Registered against Tether's "USD₮ contract address", the Ethereum listing held 0xdac1… and 0xd077…, the address the page gives for Kaia, where on Ethereum a different contract named "Tether USD" (symbol USDT, 6 decimals) lives. The reader saw only the Kaia wording around the address and recorded `NOT_ISSUER_ISSUED` with every voting validator agreeing; the lesson is to name the chain, as `tether-eth` does. The recorded reason ("the issuer's page lists this address as not issued by the issuer") is the contract's fixed wording for that verdict, and is looser than what happened here.
 - **The gate acts on the verdict.** PayoutGate approved 400,000 of Arbitrum's USDC and 250,000 of Base's, and refused: the bridged USDC.e (`NOT_LISTED`), the look-alike, a payout that would pass the 1,000,000 cap, a token never checked, a subject TokenOrigin has never heard of, and a check older than the strict gate's one second.
+- **The two verdicts no real page earned, from two synthetic pages.** `demo/example-issuer-arbitrum.html` lists a native USDC and says another address is bridged and not issued by it; the validators recorded `CANONICAL` for the first and `NOT_ISSUER_ISSUED` for the second, and PayoutGate refused the bridged one. `demo/example-issuer-ethereum.html` calls its listed Ethereum token deprecated; the check was `DEPRECATED` and the gate refused it. Both pages are marked as fixtures in the page itself and here: they are not real issuers, and the addresses they name belong to real tokens (Circle's USDC and USDC.e on Arbitrum, DAI on Ethereum) that those pages say nothing true about.
 - **Registration refuses what the page cannot support.** A label the page never shows, a symbol none of the listed addresses has, an Arbitrum subject registered against the Ethereum row, a duplicate, a chain without nodes, a page that is not https and decimals that do not match were each refused by the validators.
-- **The first deployment taught one thing and was replaced.** On it, 1 or 2 of 5 validators dissented on the check of Base's bridged USDbC in roughly four of ten repeated runs: dRPC and Tenderly answered the validators' burst of requests with HTTP 429, so a validator saw fewer than two answers for the address it read last. The verdict was right by majority every time, but a split vote is what a check should not show. The second deployment asks five nodes in order until two have answered; every transaction on it so far was unanimous. See [research/README.md](../research/README.md).
+- **The first deployment taught one thing and was replaced.** On it, 1 or 2 of 5 validators dissented on the check of Base's bridged USDbC in roughly four of ten repeated runs: dRPC and Tenderly answered the validators' burst of requests with HTTP 429, so a validator saw fewer than two answers for the address it read last. The verdict was right by majority every time, but a split vote is what a check should not show. The second deployment asks five nodes in order until two have answered; all 44 transactions on it were unanimous (no validator voted DISAGREE). See [research/README.md](../research/README.md).
 
 ## Superseded deployments
 

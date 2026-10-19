@@ -1886,5 +1886,958 @@
    "subject_id": "circle-arb",
    "token": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
   }
+ },
+ {
+  "id": "reg-demo-arb",
+  "step": "register",
+  "args": [
+   "demo-arb",
+   "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+   "Arbitrum",
+   "arbitrum",
+   "USDC",
+   6,
+   "SYNTHETIC page: lists a native and a bridged token"
+  ],
+  "note": "a page that lists a native token and says another is bridged, not issued by it",
+  "tx": "0x89fe242708940b028802d93768ab8cf9938bfedeee45467decfa8a2f09b93a0a",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "arbitrum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 6,
+   "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+   "label": "Arbitrum",
+   "note": "SYNTHETIC page: lists a native and a bridged token",
+   "registered_at": "2026-10-19T14:00:11.814623+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "demo-arb",
+   "symbol": "USDC"
+  }
+ },
+ {
+  "id": "reg-demo-eth",
+  "step": "register",
+  "args": [
+   "demo-eth",
+   "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-ethereum.html",
+   "Ethereum",
+   "ethereum",
+   "DAI",
+   18,
+   "SYNTHETIC page: calls its Ethereum token deprecated"
+  ],
+  "note": "a page that calls its listed token deprecated",
+  "tx": "0xf52e5e7c8b4cf99cd9bb8dc733a41a279a03ae8ff35518c2bf5ea8d7ff9d77f4",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "",
+  "subject": {
+   "chain": "ethereum",
+   "check_count": 0,
+   "decided_count": 0,
+   "decimals": 18,
+   "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-ethereum.html",
+   "label": "Ethereum",
+   "note": "SYNTHETIC page: calls its Ethereum token deprecated",
+   "registered_at": "2026-10-19T14:00:26.911161+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "subject_id": "demo-eth",
+   "symbol": "DAI"
+  }
+ },
+ {
+  "id": "check-demo-native",
+  "step": "check",
+  "args": [
+   "demo-arb",
+   "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  ],
+  "note": "SYNTHETIC page: the native token",
+  "tx": "0xbe9871beeeb7ec7f5a00d5f9ed7f13ab4e8501c3bf795375a50f8fc043a50bc9",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+   "check_id": 14,
+   "checked_at": "2026-10-19T14:00:42.063212+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+       "TOKEN",
+       "USDC",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "CURRENT"
+   },
+   "reasons": [],
+   "subject_id": "demo-arb",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT"
+   },
+   "verdict": "CANONICAL"
+  }
+ },
+ {
+  "id": "check-demo-bridged",
+  "step": "check",
+  "args": [
+   "demo-arb",
+   "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+  ],
+  "note": "SYNTHETIC page: the same page says this one is bridged and not issued by the issuer",
+  "tx": "0x7c4f7638550606a92126bfe5e8a82c6a1b71140b22b56337f29de4524ae7b414",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "candidate": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+   "check_id": 15,
+   "checked_at": "2026-10-19T14:01:00.207649+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0xaf88d065e77c8cc2239327c5edb3a432268e5831": [
+       "TOKEN",
+       "USDC",
+       6
+      ],
+      "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": [
+       "TOKEN",
+       "USDC",
+       6
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "page_problems": []
+   },
+   "previous_id": 14,
+   "reading": {
+    "contexts": 1,
+    "status": "NOT_ISSUER_ISSUED"
+   },
+   "reasons": [
+    "the issuer's page lists this address as not issued by the issuer"
+   ],
+   "subject_id": "demo-arb",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 6,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "USDC",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "lookalike_of": null,
+    "status": "NOT_ISSUER_ISSUED"
+   },
+   "verdict": "NOT_ISSUER_ISSUED"
+  }
+ },
+ {
+  "id": "check-demo-deprecated",
+  "step": "check",
+  "args": [
+   "demo-eth",
+   "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+  ],
+  "note": "SYNTHETIC page: calls its Ethereum token deprecated",
+  "tx": "0xda9637cb9f56c904f581f5b024633dfecbad96827cb77d7a9e78dfb8652156d2",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "candidate": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "check_id": 16,
+   "checked_at": "2026-10-19T14:01:21.530035+00:00",
+   "facts": {
+    "chain": {
+     "info": {
+      "0x6b175474e89094c44da98b954eedeac495271d0f": [
+       "TOKEN",
+       "DAI",
+       18
+      ]
+     },
+     "problems": []
+    },
+    "listed": [
+     "0x6b175474e89094c44da98b954eedeac495271d0f"
+    ],
+    "page_problems": []
+   },
+   "previous_id": null,
+   "reading": {
+    "contexts": 1,
+    "status": "DEPRECATED"
+   },
+   "reasons": [
+    "the issuer's page lists this address but presents it as deprecated"
+   ],
+   "subject_id": "demo-eth",
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "summary": {
+    "candidate_decimals": 18,
+    "candidate_kind": "TOKEN",
+    "candidate_symbol": "DAI",
+    "listing": [
+     "0x6b175474e89094c44da98b954eedeac495271d0f"
+    ],
+    "lookalike_of": null,
+    "status": "DEPRECATED"
+   },
+   "verdict": "DEPRECATED"
+  }
+ },
+ {
+  "id": "g-deprecated",
+  "step": "gate",
+  "which": "gate",
+  "args": [
+   "demo-eth",
+   "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+   "1"
+  ],
+  "note": "DEPRECATED: refused",
+  "tx": "0x825bd662115eaeaa69633b8243d789878a7a14c39ee117174464788db0299729",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "revert": "'demo-eth' refused: 0x6B175474E89094C44Da98b954EedeAC495271d0F is DEPRECATED, not CANONICAL",
+  "total": {
+   "approved_raw": "0",
+   "cap_raw": "1000000",
+   "subject_id": "demo-eth",
+   "token": "0x6b175474e89094c44da98b954eedeac495271d0f"
+  }
+ },
+ {
+  "id": "g-bridged",
+  "step": "gate",
+  "which": "gate",
+  "args": [
+   "demo-arb",
+   "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+   "1"
+  ],
+  "note": "NOT_ISSUER_ISSUED: refused",
+  "tx": "0xdb7db9ae728b79bbc715928e462e06b938a966843e094e6eaf5000c1a3e6e8fa",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "revert": "'demo-arb' refused: 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8 is NOT_ISSUER_ISSUED, not CANONICAL",
+  "total": {
+   "approved_raw": "0",
+   "cap_raw": "1000000",
+   "subject_id": "demo-arb",
+   "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+  }
+ },
+ {
+  "id": "read",
+  "step": "read",
+  "subjects": [
+   {
+    "chain": "arbitrum",
+    "check_count": 2,
+    "decided_count": 2,
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "label": "Arbitrum",
+    "note": "Circle USDC on Arbitrum",
+    "registered_at": "2026-10-19T13:42:44.288063+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "circle-arb",
+    "symbol": "USDC"
+   },
+   {
+    "chain": "base",
+    "check_count": 2,
+    "decided_count": 2,
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "label": "Base",
+    "note": "Circle USDC on Base",
+    "registered_at": "2026-10-19T13:43:00.391509+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "circle-base",
+    "symbol": "USDC"
+   },
+   {
+    "chain": "ethereum",
+    "check_count": 5,
+    "decided_count": 5,
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "label": "Ethereum",
+    "note": "Circle USDC on Ethereum",
+    "registered_at": "2026-10-19T13:42:29.284168+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "circle-eth",
+    "symbol": "USDC"
+   },
+   {
+    "chain": "arbitrum",
+    "check_count": 2,
+    "decided_count": 2,
+    "decimals": 6,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+    "label": "Arbitrum",
+    "note": "SYNTHETIC page: lists a native and a bridged token",
+    "registered_at": "2026-10-19T14:00:11.814623+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "demo-arb",
+    "symbol": "USDC"
+   },
+   {
+    "chain": "ethereum",
+    "check_count": 1,
+    "decided_count": 1,
+    "decimals": 18,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-ethereum.html",
+    "label": "Ethereum",
+    "note": "SYNTHETIC page: calls its Ethereum token deprecated",
+    "registered_at": "2026-10-19T14:00:26.911161+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "demo-eth",
+    "symbol": "DAI"
+   },
+   {
+    "chain": "arbitrum",
+    "check_count": 0,
+    "decided_count": 0,
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "label": "Arbitrum Mainnet",
+    "note": "registered, never checked",
+    "registered_at": "2026-10-19T13:43:54.864781+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "paxos-arb",
+    "symbol": "PYUSD"
+   },
+   {
+    "chain": "ethereum",
+    "check_count": 2,
+    "decided_count": 2,
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "label": "Ethereum Mainnet",
+    "note": "Paxos PYUSD on Ethereum",
+    "registered_at": "2026-10-19T13:43:39.980174+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "paxos-eth",
+    "symbol": "PYUSD"
+   },
+   {
+    "chain": "ethereum",
+    "check_count": 1,
+    "decided_count": 1,
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "label": "USD₮ contract address",
+    "note": "Tether USDT on Ethereum, label names no chain",
+    "registered_at": "2026-10-19T13:43:24.981077+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "tether-any-chain",
+    "symbol": "USDT"
+   },
+   {
+    "chain": "ethereum",
+    "check_count": 2,
+    "decided_count": 2,
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "label": "Ethereum",
+    "note": "Tether USDT on Ethereum",
+    "registered_at": "2026-10-19T13:43:10.108239+00:00",
+    "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "subject_id": "tether-eth",
+    "symbol": "USDT"
+   }
+  ],
+  "listings": {
+   "circle-arb": {
+    "age_seconds": 886,
+    "chain": "arbitrum",
+    "check_id": 6,
+    "checked_at": "2026-10-19T13:47:31.984609+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "subject_id": "circle-arb",
+    "symbol": "USDC"
+   },
+   "circle-base": {
+    "age_seconds": 871,
+    "chain": "base",
+    "check_id": 7,
+    "checked_at": "2026-10-19T13:47:49.215870+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "listing": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "subject_id": "circle-base",
+    "symbol": "USDC"
+   },
+   "circle-eth": {
+    "age_seconds": 780,
+    "chain": "ethereum",
+    "check_id": 13,
+    "checked_at": "2026-10-19T13:49:23.856842+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "subject_id": "circle-eth",
+    "symbol": "USDC"
+   },
+   "demo-arb": {
+    "age_seconds": 86,
+    "chain": "arbitrum",
+    "check_id": 15,
+    "checked_at": "2026-10-19T14:01:00.207649+00:00",
+    "decimals": 6,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "subject_id": "demo-arb",
+    "symbol": "USDC"
+   },
+   "demo-eth": {
+    "age_seconds": 68,
+    "chain": "ethereum",
+    "check_id": 16,
+    "checked_at": "2026-10-19T14:01:21.530035+00:00",
+    "decimals": 18,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-ethereum.html",
+    "listing": [
+     "0x6b175474e89094c44da98b954eedeac495271d0f"
+    ],
+    "subject_id": "demo-eth",
+    "symbol": "DAI"
+   },
+   "paxos-arb": {
+    "age_seconds": null,
+    "chain": "arbitrum",
+    "check_id": null,
+    "checked_at": null,
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "listing": [],
+    "subject_id": "paxos-arb",
+    "symbol": "PYUSD"
+   },
+   "paxos-eth": {
+    "age_seconds": 810,
+    "chain": "ethereum",
+    "check_id": 12,
+    "checked_at": "2026-10-19T13:49:05.723695+00:00",
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "listing": [
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "subject_id": "paxos-eth",
+    "symbol": "PYUSD"
+   },
+   "tether-any-chain": {
+    "age_seconds": 952,
+    "chain": "ethereum",
+    "check_id": 4,
+    "checked_at": "2026-10-19T13:46:46.762298+00:00",
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "listing": [
+     "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "subject_id": "tether-any-chain",
+    "symbol": "USDT"
+   },
+   "tether-eth": {
+    "age_seconds": 862,
+    "chain": "ethereum",
+    "check_id": 9,
+    "checked_at": "2026-10-19T13:48:19.150279+00:00",
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "listing": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "subject_id": "tether-eth",
+    "symbol": "USDT"
+   }
+  },
+  "standings": {
+   "circle-eth|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+    "age_seconds": 1048,
+    "chain": "ethereum",
+    "check_id": 0,
+    "checked_at": "2026-10-19T13:45:17.050694+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "circle-eth",
+    "symbol": "USDC",
+    "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "verdict": "CANONICAL"
+   },
+   "circle-arb|0xaf88d065e77c8cc2239327c5edb3a432268e5831": {
+    "age_seconds": 1033,
+    "chain": "arbitrum",
+    "check_id": 1,
+    "checked_at": "2026-10-19T13:45:34.470077+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "circle-arb",
+    "symbol": "USDC",
+    "token": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+    "verdict": "CANONICAL"
+   },
+   "circle-base|0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+    "age_seconds": 1019,
+    "chain": "base",
+    "check_id": 2,
+    "checked_at": "2026-10-19T13:45:51.679666+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "circle-base",
+    "symbol": "USDC",
+    "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "verdict": "CANONICAL"
+   },
+   "tether-eth|0xdac17f958d2ee523a2206206994597c13d831ec7": {
+    "age_seconds": 994,
+    "chain": "ethereum",
+    "check_id": 3,
+    "checked_at": "2026-10-19T13:46:19.365613+00:00",
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "exists": true,
+    "listing": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "tether-eth",
+    "symbol": "USDT",
+    "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "verdict": "CANONICAL"
+   },
+   "tether-any-chain|0xd077a400968890eacc75cdc901f0356c943e4fdb": {
+    "age_seconds": 970,
+    "chain": "ethereum",
+    "check_id": 4,
+    "checked_at": "2026-10-19T13:46:46.762298+00:00",
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "exists": true,
+    "listing": [
+     "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": "NOT_ISSUER_ISSUED",
+    "subject_id": "tether-any-chain",
+    "symbol": "USDT",
+    "token": "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+    "verdict": "NOT_ISSUER_ISSUED"
+   },
+   "paxos-eth|0x6c3ea9036406852006290770bedfcaba0e23a0e8": {
+    "age_seconds": 950,
+    "chain": "ethereum",
+    "check_id": 5,
+    "checked_at": "2026-10-19T13:47:09.523448+00:00",
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "exists": true,
+    "listing": [
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "paxos-eth",
+    "symbol": "PYUSD",
+    "token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+    "verdict": "CANONICAL"
+   },
+   "circle-arb|0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": {
+    "age_seconds": 930,
+    "chain": "arbitrum",
+    "check_id": 6,
+    "checked_at": "2026-10-19T13:47:31.984609+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "circle-arb",
+    "symbol": "USDC",
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "verdict": "NOT_LISTED"
+   },
+   "circle-base|0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca": {
+    "age_seconds": 916,
+    "chain": "base",
+    "check_id": 7,
+    "checked_at": "2026-10-19T13:47:49.215870+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "circle-base",
+    "symbol": "USDC",
+    "token": "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+    "verdict": "NOT_LISTED"
+   },
+   "circle-eth|0x6b175474e89094c44da98b954eedeac495271d0f": {
+    "age_seconds": 901,
+    "chain": "ethereum",
+    "check_id": 8,
+    "checked_at": "2026-10-19T13:48:06.875117+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "circle-eth",
+    "symbol": "USDC",
+    "token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "verdict": "NOT_LISTED"
+   },
+   "tether-eth|0xc581b735a1688071a1746c968e0798d642ede491": {
+    "age_seconds": 892,
+    "chain": "ethereum",
+    "check_id": 9,
+    "checked_at": "2026-10-19T13:48:19.150279+00:00",
+    "decimals": 6,
+    "docs_url": "https://tether.to/en/supported-protocols/",
+    "exists": true,
+    "listing": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "tether-eth",
+    "symbol": "USDT",
+    "token": "0xc581b735a1688071a1746c968e0798d642ede491",
+    "verdict": "NOT_LISTED"
+   },
+   "circle-eth|0x000000000000000000000000000000000000dead": {
+    "age_seconds": 878,
+    "chain": "ethereum",
+    "check_id": 10,
+    "checked_at": "2026-10-19T13:48:36.434607+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "circle-eth",
+    "symbol": "USDC",
+    "token": "0x000000000000000000000000000000000000dead",
+    "verdict": "NOT_A_TOKEN"
+   },
+   "circle-eth|0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+    "age_seconds": 868,
+    "chain": "ethereum",
+    "check_id": 11,
+    "checked_at": "2026-10-19T13:48:48.694293+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "circle-eth",
+    "symbol": "USDC",
+    "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "verdict": "NOT_A_TOKEN"
+   },
+   "paxos-eth|0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3": {
+    "age_seconds": 854,
+    "chain": "ethereum",
+    "check_id": 12,
+    "checked_at": "2026-10-19T13:49:05.723695+00:00",
+    "decimals": 6,
+    "docs_url": "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet",
+    "exists": true,
+    "listing": [
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "lookalike_of": null,
+    "status": null,
+    "subject_id": "paxos-eth",
+    "symbol": "PYUSD",
+    "token": "0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3",
+    "verdict": "NOT_A_TOKEN"
+   },
+   "circle-eth|0xa0b8dedededededededededededededeadadeb48": {
+    "age_seconds": 839,
+    "chain": "ethereum",
+    "check_id": 13,
+    "checked_at": "2026-10-19T13:49:23.856842+00:00",
+    "decimals": 6,
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "exists": true,
+    "listing": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "lookalike_of": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "status": null,
+    "subject_id": "circle-eth",
+    "symbol": "USDC",
+    "token": "0xa0b8dedededededededededededededeadadeb48",
+    "verdict": "LOOKALIKE"
+   },
+   "demo-arb|0xaf88d065e77c8cc2239327c5edb3a432268e5831": {
+    "age_seconds": 164,
+    "chain": "arbitrum",
+    "check_id": 14,
+    "checked_at": "2026-10-19T14:00:42.063212+00:00",
+    "decimals": 6,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+    "exists": true,
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "lookalike_of": null,
+    "status": "CURRENT",
+    "subject_id": "demo-arb",
+    "symbol": "USDC",
+    "token": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+    "verdict": "CANONICAL"
+   },
+   "demo-arb|0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": {
+    "age_seconds": 149,
+    "chain": "arbitrum",
+    "check_id": 15,
+    "checked_at": "2026-10-19T14:01:00.207649+00:00",
+    "decimals": 6,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-arbitrum.html",
+    "exists": true,
+    "listing": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"
+    ],
+    "lookalike_of": null,
+    "status": "NOT_ISSUER_ISSUED",
+    "subject_id": "demo-arb",
+    "symbol": "USDC",
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "verdict": "NOT_ISSUER_ISSUED"
+   },
+   "demo-eth|0x6b175474e89094c44da98b954eedeac495271d0f": {
+    "age_seconds": 131,
+    "chain": "ethereum",
+    "check_id": 16,
+    "checked_at": "2026-10-19T14:01:21.530035+00:00",
+    "decimals": 18,
+    "docs_url": "https://raw.githubusercontent.com/HarrisonJL/tokenorigin/main/demo/example-issuer-ethereum.html",
+    "exists": true,
+    "listing": [
+     "0x6b175474e89094c44da98b954eedeac495271d0f"
+    ],
+    "lookalike_of": null,
+    "status": "DEPRECATED",
+    "subject_id": "demo-eth",
+    "symbol": "DAI",
+    "token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "verdict": "DEPRECATED"
+   }
+  },
+  "state": {
+   "check_count": 17,
+   "subject_count": 9
+  },
+  "rules": {
+   "anchor_radius": 250,
+   "chains": {
+    "arbitrum": [
+     "https://arbitrum-one-rpc.publicnode.com",
+     "https://arb1.arbitrum.io/rpc",
+     "https://arbitrum.drpc.org",
+     "https://arbitrum.gateway.tenderly.co",
+     "https://arbitrum-one.public.blastapi.io"
+    ],
+    "base": [
+     "https://base-rpc.publicnode.com",
+     "https://mainnet.base.org",
+     "https://base.drpc.org",
+     "https://base.gateway.tenderly.co",
+     "https://base-mainnet.public.blastapi.io"
+    ],
+    "ethereum": [
+     "https://ethereum-rpc.publicnode.com",
+     "https://eth-mainnet.public.blastapi.io",
+     "https://eth.drpc.org",
+     "https://gateway.tenderly.co/public/mainnet",
+     "https://eth-pokt.nodies.app"
+    ]
+   },
+   "lookalike": {
+    "shared_prefix_hex": 4,
+    "shared_suffix_hex": 4
+   },
+   "max_addresses": 6,
+   "min_sources": 2,
+   "statuses": [
+    "CURRENT",
+    "DEPRECATED",
+    "NOT_ISSUER_ISSUED",
+    "UNCLEAR"
+   ],
+   "verdicts": [
+    "CANONICAL",
+    "DEPRECATED",
+    "NOT_ISSUER_ISSUED",
+    "NOT_LISTED",
+    "LOOKALIKE",
+    "NOT_A_TOKEN",
+    "UNDETERMINED"
+   ]
+  },
+  "gate_config": {
+   "approval_count": 2,
+   "cap_raw": "1000000",
+   "max_age_seconds": 86400,
+   "owner": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "tokenorigin_address": "0xc2f09Eb3E89B3290184BBFDD28D51F8BC225F00A"
+  },
+  "approvals": [
+   {
+    "amount_raw": "250000",
+    "approved_at": "2026-10-19T13:49:50.806223+00:00",
+    "approved_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "chain": "base",
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "subject_id": "circle-base",
+    "symbol": "USDC",
+    "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+   },
+   {
+    "amount_raw": "400000",
+    "approved_at": "2026-10-19T13:49:41.506379+00:00",
+    "approved_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+    "chain": "arbitrum",
+    "docs_url": "https://developers.circle.com/stablecoins/usdc-contract-addresses",
+    "subject_id": "circle-arb",
+    "symbol": "USDC",
+    "token": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+   }
+  ]
  }
 ]
